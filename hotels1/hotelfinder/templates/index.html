@@ -1,0 +1,21 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <p><br /></p>
+  <h1>Hotel Recommendation System</h1>
+  <p>Welcome! <br />
+	My name is Jonas Cuadrado, I'm a data scientist with a strong scientific background in math and engineering. You can check out my <a href="http://www.linkedin.com/in/jonas-cuadrado-5b704630/">LinkedIn</a> to know more about me!<br />
+	This is a simple project created in the framework of the <a href="https://www.springboard.com/workshops/data-science-career-track">Springboard</a> Data Science Bootcamp (you should check them out). Using python I created a recommender system for hotels, and set up this little website on <a href="http://www.aws.amazon.com">AWS</a> as a proof of concept based on <a href="https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django">this</a> amazing tutorial. It works pretty well, and if it catches up I would like to extend the database and scale it.<br /><br />
+	Here's how it works:<br />
+	&#8226 Log in or sign up. I won't send you any email ever, I promise.<br />
+	&#8226 Rate a bunch of hotels you have been to. Ideally, the more the better, but with a few it still works.<br />
+	&#8226 Use the search engine to get recommendations.<br />
+	&#8226 Go to your favorite hotel booking website and book! (Links to come in the future - sorry!)<br /><br />
+
+Let me know if you have any questions. My contact is on <a href="http://www.linkedin.com/in/jonas-cuadrado-5b704630/">LinkedIn</a>.</p>
+  <p>The database has the following record counts:</p>
+  <ul>
+    <li><strong>Hotels:</strong> {{ num_hotels }}</li>
+    <li><strong>Ratings:</strong> {{ num_ratings }}</li>
+  </ul>
+{% endblock %}

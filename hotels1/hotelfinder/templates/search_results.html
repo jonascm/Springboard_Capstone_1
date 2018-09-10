@@ -1,0 +1,19 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <p><br /></p>
+  <h1>Hotel Recommendation System</h1>
+  <p>Here are your results for {{ city }}</p>
+  <ul>
+    <p><strong>Based on users similar to you:</strong></p>
+    {% for item1, item2 in user %}
+      {{ item1 }} ------- Estimated rating:{{ item2 }}<br />
+    {% endfor %}
+  </ul>
+  <ul>
+    <p><strong>Based on other items you like:</strong></p>
+    {% for item1i, item2i in item__ %}
+      {{ item1i }} ------- Estimated rating:{{ item2i }}<br />
+    {% endfor %}
+  </ul>
+{% endblock %}

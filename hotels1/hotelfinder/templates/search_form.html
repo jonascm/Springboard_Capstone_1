@@ -1,0 +1,12 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <p><br /></p>
+  <h1>Hotel Recommendation System</h1>
+  <p>Introduce the city you want to travel to:</p>
+  <form action="" method="post">
+    {% csrf_token %}
+    {{ form.as_table }}
+    <input type="submit" value="Submit">
+  </form>
+{% endblock %}
